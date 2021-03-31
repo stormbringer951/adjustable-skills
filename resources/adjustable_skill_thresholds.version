@@ -1,7 +1,7 @@
 {
-    "masterVersionFile":"",
+    "masterVersionFile":"https://raw.githubusercontent.com/stormbringer951/adjustable-skills/master/resources/mod_info.json",
     "modName":"adjustable_skill_thresholds",
-    "modThreadId":"",
+    "modThreadId":"20265",
     "modVersion":
     {
         "major":1,
