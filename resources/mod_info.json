@@ -1,0 +1,10 @@
+{
+  "id":"adjustable_skill_thresholds",
+  "name":"Adjustable Skill Thresholds",
+  "author":"stormbringer951",
+  "version":"1.0.0",
+  "description":"Adjust skill-related OP and fighter bay thresholds.",
+  "gameVersion":"0.95a-RC10",
+  "jars":["jars/AdjustableSkillThresholds.jar"],
+  "modPlugin":"AdjustableSkillThresholds.AdjustableSkillThresholdsModPlugin"
+}

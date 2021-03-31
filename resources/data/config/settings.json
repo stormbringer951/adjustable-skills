@@ -1,0 +1,9 @@
+{
+  "carrier_group_fighter_uplink_fighter_bay_threshold": 6,
+  "crew_training_flux_regulation_op_threshold": 180,
+  "weapon_drills_op_threshold": 90,
+  "containment_procedures_field_repairs_op_threshold": 60,
+  "auxiliary_support_op_threshold":5,
+  "phase_corps_op_threshold": 30,
+  "automated_ships_op_threshold": 30
+}
