@@ -5,5 +5,8 @@
   "containment_procedures_field_repairs_op_threshold": 60,
   "auxiliary_support_op_threshold":5,
   "phase_corps_op_threshold": 30,
-  "automated_ships_op_threshold": 30
+  "automated_ships_op_threshold": 30,
+  "bulk_transport_cargo_threshold": 2000,
+  "bulk_transport_fuel_threshold": 2000,
+  "bulk_transport_personnel_threshold": 5000
 }
