@@ -3,6 +3,8 @@ package AdjustableSkillThresholds;
 import com.fs.starfarer.api.BaseModPlugin;
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.impl.campaign.skills.BaseSkillEffectDescription;
+import com.fs.starfarer.api.impl.campaign.skills.BulkTransport;
+
 
 @SuppressWarnings("unused")
 public class AdjustableSkillThresholdsModPlugin extends BaseModPlugin {
@@ -13,6 +15,9 @@ public class AdjustableSkillThresholdsModPlugin extends BaseModPlugin {
     private static final String AUXILIARY_SUPPORT_OP = "auxiliary_support_op_threshold";
     private static final String PHASE_CORPS_OP = "phase_corps_op_threshold";
     private static final String AUTOMATED_SHIPS_OP = "automated_ships_op_threshold";
+    private static final String CARGO_THRESHOLD = "bulk_transport_cargo_threshold";
+    private static final String FUEL_THRESHOLD = "bulk_transport_fuel_threshold";
+    private static final String PERSONNEL_THRESHOLD = "bulk_transport_personnel_threshold";
 
     private int getSettingsInt(String key) {
         int value = Global.getSettings().getInt(key); // throws if not convertible to number
@@ -31,5 +36,8 @@ public class AdjustableSkillThresholdsModPlugin extends BaseModPlugin {
         BaseSkillEffectDescription.MILITARIZED_OP_THRESHOLD = getSettingsInt(AUXILIARY_SUPPORT_OP);
         BaseSkillEffectDescription.PHASE_OP_THRESHOLD = getSettingsInt(PHASE_CORPS_OP);
         BaseSkillEffectDescription.AUTOMATED_POINTS_THRESHOLD = getSettingsInt(AUTOMATED_SHIPS_OP);
+        BulkTransport.CARGO_CAPACITY_THRESHOLD = getSettingsInt(CARGO_THRESHOLD);
+        BulkTransport.FUEL_CAPACITY_THRESHOLD = getSettingsInt(FUEL_THRESHOLD);
+        BulkTransport.PERSONNEL_CAPACITY_THRESHOLD = getSettingsInt(PERSONNEL_THRESHOLD);
     }
 }
