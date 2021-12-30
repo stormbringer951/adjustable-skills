@@ -1,12 +1,12 @@
 {
   "carrier_group_fighter_uplink_fighter_bay_threshold": 8,
   "crew_training_flux_regulation_op_threshold": 240,
-  "weapon_drills_op_threshold": 120,
-  "containment_procedures_field_repairs_op_threshold": 60,
-  "auxiliary_support_op_threshold":5,
-  "phase_corps_op_threshold": 30,
-  "automated_ships_op_threshold": 30,
+  "tactical_drills_op_threshold": 240,
+  "containment_procedures_field_repairs_op_threshold": 240,
+  "phase_coil_tuning_op_threshold": 40,
+  "automated_ships_op_threshold": 120,
   "bulk_transport_cargo_threshold": 2000,
   "bulk_transport_fuel_threshold": 2000,
-  "bulk_transport_personnel_threshold": 5000
+  "bulk_transport_personnel_threshold": 5000,
+  "derelict_operations_percentage_per_d_mod": 6
 }
