@@ -8,5 +8,7 @@
   "bulk_transport_cargo_threshold": 2000,
   "bulk_transport_fuel_threshold": 2000,
   "bulk_transport_personnel_threshold": 5000,
-  "derelict_operations_percentage_per_d_mod": 6
+  "derelict_operations_percentage_per_d_mod": 6,
+  "containment_procedures_fuel_use_reduction_max_fuel": 25,
+  "makeshift_equipment_supply_use_reduction_max_units": 100
 }
