@@ -1,14 +1,29 @@
-# Remove working directory
-out/
-
-# Remove compiled content
-/jars/
-
-# Remove project files
+# IDE configs
 .idea/
+.vscode/
+
+# Local development files (IntelliJ)
+out/
+jars/
 *.iml
 
-# Resource files
+# Local development files (Gradle)
+.classpath
+.gradle/
+.project
+.settings/
+bin/
+build/
+gradle.properties
+
+# Node modules (Prettier)
+node_modules/
+package-lock.json
+
+# Build artifacts
 /data/
-/*.json
-/*.version
+/adjustable_skill_thresholds.version
+/mod_info.json
+/changelog.txt
+/*.jar
+/*.zip
