@@ -6,13 +6,14 @@ import com.fs.starfarer.api.impl.campaign.skills.BaseSkillEffectDescription;
 import com.fs.starfarer.api.impl.campaign.skills.BulkTransport;
 import com.fs.starfarer.api.impl.campaign.skills.DerelictContingent;
 
-
 @SuppressWarnings("unused")
 public class AdjustableSkillThresholdsModPlugin extends BaseModPlugin {
+
     private static final String FIGHTER_BAYS_THRESHOLD = "carrier_group_fighter_uplink_fighter_bay_threshold";
     private static final String CREW_TRAINING_FLUX_REGULATION_OP = "crew_training_flux_regulation_op_threshold";
     private static final String TACTICAL_DRILLS_OP = "tactical_drills_op_threshold";
-    private static final String CONTAINMENT_PROCEDURES_FIELD_REPAIRS_OP = "containment_procedures_field_repairs_op_threshold";
+    private static final String CONTAINMENT_PROCEDURES_FIELD_REPAIRS_OP =
+        "containment_procedures_field_repairs_op_threshold";
     private static final String PHASE_COIL_TUNING_OP = "phase_coil_tuning_op_threshold";
     private static final String AUTOMATED_SHIPS_OP = "automated_ships_op_threshold";
     private static final String CARGO_THRESHOLD = "bulk_transport_cargo_threshold";
