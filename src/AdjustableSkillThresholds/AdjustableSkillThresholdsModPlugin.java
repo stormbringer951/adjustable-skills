@@ -5,6 +5,8 @@ import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.impl.campaign.skills.BaseSkillEffectDescription;
 import com.fs.starfarer.api.impl.campaign.skills.BulkTransport;
 import com.fs.starfarer.api.impl.campaign.skills.DerelictContingent;
+import com.fs.starfarer.api.impl.campaign.skills.ContainmentProcedures;
+import com.fs.starfarer.api.impl.campaign.skills.MakeshiftEquipment;
 
 @SuppressWarnings("unused")
 public class AdjustableSkillThresholdsModPlugin extends BaseModPlugin {
@@ -20,6 +22,8 @@ public class AdjustableSkillThresholdsModPlugin extends BaseModPlugin {
     private static final String FUEL_THRESHOLD = "bulk_transport_fuel_threshold";
     private static final String PERSONNEL_THRESHOLD = "bulk_transport_personnel_threshold";
     private static final String DERELICT_OPS_PERCENTAGE = "derelict_operations_percentage_per_d_mod";
+    private static final String MAX_FUEL_REDUCTION = "containment_procedures_fuel_use_reduction_max_fuel";
+    private static final String MAX_SUPPLY_REDUCTION = "makeshift_equipment_supply_use_reduction_max_units";
 
     private int getSettingsInt(String key) {
         int value = Global.getSettings().getInt(key); // throws if not convertible to number
@@ -49,5 +53,7 @@ public class AdjustableSkillThresholdsModPlugin extends BaseModPlugin {
         BulkTransport.FUEL_CAPACITY_THRESHOLD = getSettingsInt(FUEL_THRESHOLD);
         BulkTransport.PERSONNEL_CAPACITY_THRESHOLD = getSettingsInt(PERSONNEL_THRESHOLD);
         DerelictContingent.MINUS_DP_PERCENT_PER_DMOD = getSettingsFloat(DERELICT_OPS_PERCENTAGE);
+        ContainmentProcedures.FUEL_USE_REDUCTION_MAX_FUEL = getSettingsFloat(MAX_FUEL_REDUCTION);
+        MakeshiftEquipment.SUPPLY_USE_REDUCTION_MAX_UNITS = getSettingsFloat(MAX_SUPPLY_REDUCTION);
     }
 }
